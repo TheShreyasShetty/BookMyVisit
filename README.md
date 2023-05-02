@@ -15,7 +15,7 @@ Facial Recognition Appointment Booking is a Flutter application that simplifies 
 
 1. Clone the repository from GitHub:
 ```
-git clone https://github.com/your_username/your_project_name.git
+git clone https://github.com/TheShreyasShetty/BookMyVisit
 ```
 
 2. Navigate to the project directory:
