@@ -11,6 +11,7 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'home.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_date_picker_timeline/flutter_date_picker_timeline.dart';
 
 class DocTime extends StatelessWidget {
   const DocTime({Key? key});
@@ -42,14 +43,28 @@ class DocTime extends StatelessWidget {
                   ),
                 ],
               ),
+              Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(top: 11, bottom: 11),
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: FlutterDatePickerTimeline(
+                      startDate: DateTime(2023, 05, 06),
+                      endDate: DateTime(2030, 12, 30),
+                      initialSelectedDate: DateTime(2023, 05, 06), 
+                      onSelectedDateChange: (DateTime? date) {  },
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(
-                height: 70,
-                child: CupertinoDatePicker(
-                  minimumDate: DateTime.now(),
-                  mode: CupertinoDatePickerMode.date,
-                  initialDateTime: DateTime(2023, 5, 23),
-                  onDateTimeChanged: (DateTime newDateTime) {},
-                ),
+                height: 35,
+                // child: CupertinoDatePicker(
+                // minimumDate: DateTime.now(),
+                // mode: CupertinoDatePickerMode.date,
+                // initialDateTime: DateTime(2023,5,23),
+                // onDateTimeChanged: (DateTime newDateTime){},
+                // ),
               ),
               SizedBox(
                 height: 40,
