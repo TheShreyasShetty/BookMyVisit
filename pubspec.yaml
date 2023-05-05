@@ -46,6 +46,7 @@ dependencies:
   firebase_core: ^2.11.0
   table_calendar: ^2.2.1
   shared_preferences: ^0.5.4+5
+  flutter_date_picker_timeline: ^0.3.3
 
 
 dev_dependencies:
