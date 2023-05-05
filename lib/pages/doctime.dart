@@ -40,17 +40,16 @@ class DocTime extends StatelessWidget {
                     'Select Your Schedule 🕛',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
                   ),
-                  TableCalendar(calendarController: calendarController)
                 ],
               ),
               SizedBox(
                 height: 70,
-                // child: CupertinoDatePicker(
-                  // minimumDate: DateTime.now(),
-                  // mode: CupertinoDatePickerMode.date,
-                  // initialDateTime: DateTime(2023,5,23),
-                  // onDateTimeChanged: (DateTime newDateTime){},
-                // ),
+                child: CupertinoDatePicker(
+                  minimumDate: DateTime.now(),
+                  mode: CupertinoDatePickerMode.date,
+                  initialDateTime: DateTime(2023, 5, 23),
+                  onDateTimeChanged: (DateTime newDateTime) {},
+                ),
               ),
               SizedBox(
                 height: 40,
