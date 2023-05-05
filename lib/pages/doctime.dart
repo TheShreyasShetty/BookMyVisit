@@ -7,8 +7,10 @@ import 'package:face_net_authentication/pages/widgets/success2.dart';
 import 'package:face_net_authentication/pages/widgets/success3.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:table_calendar/table_calendar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'home.dart';
+import 'package:flutter/cupertino.dart';
 
 class DocTime extends StatelessWidget {
   const DocTime({Key? key});
@@ -38,10 +40,20 @@ class DocTime extends StatelessWidget {
                     'Select Your Schedule 🕛',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
                   ),
+                  TableCalendar(calendarController: calendarController)
                 ],
               ),
               SizedBox(
-                height: 80,
+                height: 70,
+                // child: CupertinoDatePicker(
+                  // minimumDate: DateTime.now(),
+                  // mode: CupertinoDatePickerMode.date,
+                  // initialDateTime: DateTime(2023,5,23),
+                  // onDateTimeChanged: (DateTime newDateTime){},
+                // ),
+              ),
+              SizedBox(
+                height: 40,
               ),
               AppButton(
                 text: "9:00am - 10:00am",

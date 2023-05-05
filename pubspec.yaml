@@ -40,6 +40,13 @@ dependencies:
   get_it: ^7.2.0
   lottie: ^2.3.2
   awesome_notifications: ^0.7.4+1
+  otp_text_field: ^1.1.3
+  pinput: ^2.2.31
+  firebase_auth: ^4.5.0
+  firebase_core: ^2.11.0
+  table_calendar: ^2.2.1
+  shared_preferences: ^0.5.4+5
+
 
 dev_dependencies:
   flutter_test:

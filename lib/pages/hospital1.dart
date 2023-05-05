@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:face_net_authentication/pages/Hospital1.dart';
+import 'package:face_net_authentication/pages/appointment.dart';
 import 'package:face_net_authentication/pages/booklist.dart';
 import 'package:face_net_authentication/pages/doctime.dart';
 import 'package:face_net_authentication/pages/widgets/app_button.dart';
@@ -30,7 +31,7 @@ class Hospital1 extends StatelessWidget {
                     // ),
                     margin: EdgeInsets.all(18),
                     width: 26,
-                    height: 110,
+                    height: 100,
                   ),
                   Text(
                     'Select Your Doctor 👨‍⚕️',
@@ -39,7 +40,7 @@ class Hospital1 extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 100,
+                height: 80,
               ),
               AppButton(
                 text: "Doc 1 (General practitioner)",
@@ -107,8 +108,26 @@ class Hospital1 extends StatelessWidget {
                 color: Color.fromARGB(255, 33, 29, 29),
               ),
               SizedBox(
-                height: 50,
+                height: 40,
               ),
+              Container(
+                margin: EdgeInsets.all(25),
+                padding: EdgeInsets.all(25),
+                decoration: BoxDecoration(
+                color: Color.fromARGB(255, 201, 195, 201),
+                borderRadius: BorderRadius.circular(10),
+                ), 
+                child:FloatingActionButton(
+                  child: FaIcon(FontAwesomeIcons.bookMedical),
+                  backgroundColor: Colors.black,
+                  foregroundColor: Colors.white,
+                  onPressed: (){
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Appointment()));
+                  },
+                )
+              ),
+              Text('Your Appointments'),
             ],
           ),
         ),

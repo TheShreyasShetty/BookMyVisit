@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381849155068",
+    "firebase_url": "https://bookmyvisit-71265-default-rtdb.firebaseio.com",
+    "project_id": "bookmyvisit-71265",
+    "storage_bucket": "bookmyvisit-71265.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381849155068:android:6554e84c62cb0a25f6ee79",
+        "android_client_info": {
+          "package_name": "com.example.FaceNet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381849155068-v1grrhv7aae362gga8e1he7hn7ffjik1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGBPF0A3lo8upVzuGOV4veINgXw57e8VA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381849155068-v1grrhv7aae362gga8e1he7hn7ffjik1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
